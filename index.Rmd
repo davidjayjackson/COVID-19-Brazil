@@ -1,7 +1,7 @@
 ---
 title: 'Brazil: Battle With COVID-19'
 author: "David Jackson"
-date: "2021-06-15 11:15 AM/EDT"
+date: "2021-06-17 11:47 AM/EDT"
 output: 
   html_document:
     fig_width: 9
