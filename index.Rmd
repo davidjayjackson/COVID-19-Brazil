@@ -99,11 +99,11 @@ Weekly_new_cases$LivedSaved <- Weekly_new_cases$new_cases * (max(Weekly_new_case
 
 ```
 ```{r}
-ggplot(Weekly_new_cases) + geom_area(aes(x=Weekly,y=new_cases),alpha = 0.5,fill="red") + 
+ggplot(Weekly_new_cases) + geom_col(aes(x=Weekly,y=new_cases),alpha = 0.5,fill="red") + 
   labs(title="Weekly new_cases",x="Date date", y="Weekly Cases") +
     scale_y_continuous(labels = comma)
 
-ggplot(Weekly_new_deaths) + geom_area(aes(x=Weekly,y=new_deaths),alpha = 0.5,fill="blue") + 
+ggplot(Weekly_new_deaths) + geom_col(aes(x=Weekly,y=new_deaths),alpha = 0.5,fill="blue") + 
   labs(title="Weekly new_deaths",x="Date date", y="Weekly Deaths") +
    scale_y_continuous(labels = comma)
   
