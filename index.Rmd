@@ -39,7 +39,8 @@ sum(df$new_deaths,na.rm=TRUE)
 
 ```
 ```{r}
-US <- subset(df,date >="2020-04-01" & new_cases >=1)
+# US <- subset(df,date >="2020-04-01" & new_cases >=1)
+US <- subset(df,date >=Sys.Date() - 365)
 US <- US[order(US$date,decreasing = TRUE),]
 US$MAC <- ma(US$new_cases,14,centre=TRUE)
 US$MAD <- ma(US$new_deaths,14,centre=TRUE)
