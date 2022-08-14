@@ -131,6 +131,3 @@ ggplot(Monthly_new_deaths) + geom_col(aes(x=Monthly,y=new_deaths)) +
   labs(title="Monthly new_deaths") +
    scale_alpha_date()
 ```
-
-```{}
-```
